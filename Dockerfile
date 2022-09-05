@@ -14,4 +14,6 @@ RUN  echo 'test:test' | chpasswd
 
 EXPOSE 22
 
+CMD ["/usr/sbin/ip -a"]
+
 CMD ["/usr/sbin/sshd","-D"]
